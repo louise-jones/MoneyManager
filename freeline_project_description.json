@@ -1,0 +1,108 @@
+{
+    "android_gradle_plugin_version": "2.3.1",
+    "apk_path": "E:\\android_studio_workspace_moneymanager\\MoneyManager\\app\\build\\outputs\\apk\\app-debug.apk",
+    "auto_dependency": true,
+    "build_cache_dir": "E:\\android_studio_workspace_moneymanager\\MoneyManager\\app\\build\\freeline",
+    "build_directory": "E:\\android_studio_workspace_moneymanager\\MoneyManager\\app\\build",
+    "build_script": "gradlew.bat :app:assembleDebug",
+    "build_script_work_directory": "",
+    "build_tools_directory": "D:\\android\\sdk\\sdk\\build-tools\\25.0.2",
+    "build_tools_version": "25.0.2",
+    "check_sources_md5": [
+        
+    ],
+    "compile_sdk_directory": "D:\\android\\sdk\\sdk\\platforms\\android-25",
+    "compile_sdk_version": "android-25",
+    "databinding": [
+        
+    ],
+    "databinding_modules": [
+        
+    ],
+    "debug_package": "com.minidroid.moneymanager",
+    "exclude_dep_res_paths": [
+        
+    ],
+    "extra_dep_res_paths": [
+        
+    ],
+    "freeline_cache_dir": "E:\\android_studio_workspace_moneymanager\\MoneyManager",
+    "freeline_gradle_plugin_version": "0.8.7",
+    "ignore_resource_ids": [
+        "avd_hide_password_1",
+        "avd_hide_password_2",
+        "avd_hide_password_3",
+        "avd_show_password_1",
+        "avd_show_password_2",
+        "avd_show_password_3"
+    ],
+    "java_home": "D:\\JDK\\jdk8",
+    "launcher": "com.minidroid.moneymanager.ui.load.LoadingActivity",
+    "main_assets_directory": [
+        "E:\\android_studio_workspace_moneymanager\\MoneyManager\\app\\src\\debug\\assets",
+        "E:\\android_studio_workspace_moneymanager\\MoneyManager\\app\\src\\main\\assets"
+    ],
+    "main_jniLibs_directory": [
+        "E:\\android_studio_workspace_moneymanager\\MoneyManager\\app\\src\\debug\\jniLibs",
+        "E:\\android_studio_workspace_moneymanager\\MoneyManager\\app\\src\\main\\jniLibs"
+    ],
+    "main_jni_directory": [
+        "E:\\android_studio_workspace_moneymanager\\MoneyManager\\app\\src\\debug\\jni",
+        "E:\\android_studio_workspace_moneymanager\\MoneyManager\\app\\src\\main\\jni"
+    ],
+    "main_manifest_path": "E:\\android_studio_workspace_moneymanager\\MoneyManager\\app\\src\\main\\AndroidManifest.xml",
+    "main_project_dir": "app",
+    "main_project_name": "app",
+    "main_r_path": "E:\\android_studio_workspace_moneymanager\\MoneyManager\\app\\build\\generated\\source\\r\\debug\\R.java",
+    "main_res_directory": [
+        "E:\\android_studio_workspace_moneymanager\\MoneyManager\\app\\src\\debug\\res",
+        "E:\\android_studio_workspace_moneymanager\\MoneyManager\\app\\src\\main\\res"
+    ],
+    "main_src_directory": [
+        "E:\\android_studio_workspace_moneymanager\\MoneyManager\\app\\src\\debug\\java",
+        "E:\\android_studio_workspace_moneymanager\\MoneyManager\\app\\src\\main\\java"
+    ],
+    "module_dependencies": {
+        "app": [
+            
+        ]
+    },
+    "modules": [
+        {
+            "name": "app",
+            "path": "E:\\android_studio_workspace_moneymanager\\MoneyManager\\app"
+        }
+    ],
+    "package": "com.minidroid.moneymanager",
+    "product_flavor": "",
+    "project_source_sets": {
+        "app": {
+            "main_assets_directory": [
+                "E:\\android_studio_workspace_moneymanager\\MoneyManager\\app\\src\\debug\\assets",
+                "E:\\android_studio_workspace_moneymanager\\MoneyManager\\app\\src\\main\\assets"
+            ],
+            "main_jniLibs_directory": [
+                "E:\\android_studio_workspace_moneymanager\\MoneyManager\\app\\src\\debug\\jniLibs",
+                "E:\\android_studio_workspace_moneymanager\\MoneyManager\\app\\src\\main\\jniLibs"
+            ],
+            "main_jni_directory": [
+                "E:\\android_studio_workspace_moneymanager\\MoneyManager\\app\\src\\debug\\jni",
+                "E:\\android_studio_workspace_moneymanager\\MoneyManager\\app\\src\\main\\jni"
+            ],
+            "main_manifest_path": "E:\\android_studio_workspace_moneymanager\\MoneyManager\\app\\src\\main\\AndroidManifest.xml",
+            "main_res_directory": [
+                "E:\\android_studio_workspace_moneymanager\\MoneyManager\\app\\src\\debug\\res",
+                "E:\\android_studio_workspace_moneymanager\\MoneyManager\\app\\src\\main\\res"
+            ],
+            "main_src_directory": [
+                "E:\\android_studio_workspace_moneymanager\\MoneyManager\\app\\src\\debug\\java",
+                "E:\\android_studio_workspace_moneymanager\\MoneyManager\\app\\src\\main\\java"
+            ]
+        }
+    },
+    "project_type": "gradle",
+    "root_dir": "E:\\android_studio_workspace_moneymanager\\MoneyManager",
+    "sdk_directory": "D:\\android\\sdk\\sdk",
+    "use_jdk8": true,
+    "use_system_gradle": false
+}

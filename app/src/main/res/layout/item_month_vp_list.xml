@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/view_space_10">
+
+    <LinearLayout
+        android:id="@+id/item_vp_ll_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="0.0dip"
+                android:layout_height="@dimen/line_size_.5"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:background="@android:color/holo_orange_dark" />
+
+            <TextView
+                android:id="@+id/item_vp_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/view_space_10"
+                android:textSize="@dimen/font_size_20" />
+
+            <View
+                android:layout_width="0.0dip"
+                android:layout_height="@dimen/line_size_.5"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:background="@android:color/holo_orange_dark" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/view_space_10"
+            android:background="@color/background_transparent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/item_vp_tv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_15" />
+
+        <TextView
+            android:id="@+id/item_vp_tv_right"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="end"
+            android:textSize="@dimen/font_size_15" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/view_space_10"
+        android:background="@color/background_transparent" />
+</LinearLayout>

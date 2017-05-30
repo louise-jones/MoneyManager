@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_activity"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_layout" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/view_space_10"
+        android:background="@color/view_background_light" />
+
+    <LinearLayout
+        android:id="@+id/transfer_account_ll_money"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_state"
+        android:descendantFocusability="blocksDescendants"
+        android:padding="@dimen/view_space_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/score_icon"
+            android:drawablePadding="@dimen/view_space_10"
+            android:text="金额"
+            android:textSize="@dimen/font_size_20" />
+
+        <Space
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+
+        <TextView
+            android:id="@+id/transfer_account_tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00.00"
+            android:textColor="@color/text_in_color"
+            android:textSize="@dimen/font_size_40" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_size_.5"
+        android:background="@color/view_background_light" />
+
+    <LinearLayout
+        android:id="@+id/transfer_account_ll_out"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_state"
+        android:descendantFocusability="blocksDescendants"
+        android:padding="@dimen/view_space_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/subject_icon"
+            android:drawablePadding="@dimen/view_space_10"
+            android:text="支出账户"
+            android:textSize="@dimen/font_size_20" />
+
+        <Space
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+
+        <TextView
+            android:id="@+id/transfer_account_tv_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_20" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_size_.5"
+        android:background="@color/view_background_light" />
+
+    <LinearLayout
+        android:id="@+id/transfer_account_ll_in"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_state"
+        android:padding="@dimen/view_space_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/subject_icon"
+            android:drawablePadding="@dimen/view_space_10"
+            android:text="收入账户"
+            android:textSize="@dimen/font_size_20" />
+
+        <Space
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+
+        <TextView
+            android:id="@+id/transfer_account_tv_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_20" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_size_.5"
+        android:background="@color/view_background_light" />
+
+    <LinearLayout
+        android:id="@+id/transfer_account_ll_time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_state"
+        android:padding="@dimen/view_space_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/date_icon"
+            android:drawablePadding="@dimen/view_space_10"
+            android:text="时间"
+            android:textSize="@dimen/font_size_20" />
+
+        <Space
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+
+        <TextView
+            android:id="@+id/transfer_account_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_20" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_size_.5"
+        android:background="@color/view_background_light" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/view_space_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/label_icon"
+            android:drawablePadding="@dimen/view_space_10"
+            android:text="备注"
+            android:textSize="@dimen/font_size_20" />
+
+        <Space
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_20" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/transfer_account_et_note"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_margin="@dimen/view_space_10"
+        android:layout_weight="1.0"
+        android:background="@drawable/edit_style"
+        android:gravity="top"
+        android:maxLength="60"
+        android:padding="@dimen/view_space_10"
+        android:textColor="@color/background_yel"
+        android:textSize="@dimen/font_size_20" />
+</LinearLayout>

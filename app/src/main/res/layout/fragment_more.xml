@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_height="@dimen/view_size_75"
+        android:layout_width="fill_parent"
+        android:paddingTop="@dimen/view_space_30"
+        android:background="@color/background_title"
+        android:gravity="center"
+        android:text="设 置"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_16" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/view_space_10"
+        android:background="@color/view_background_light" />
+
+    <TextView
+        android:id="@+id/fragment_more_tv_person_center"
+        style="@style/more_item"
+        android:drawableLeft="@drawable/more_person_center"
+        android:drawableRight="@drawable/btn_next"
+        android:text="个人中心"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_size_.5"
+        android:background="@color/view_background_light"/>
+    <TextView
+        android:id="@+id/fragment_more_tv_clear"
+        style="@style/more_item"
+        android:drawableLeft="@drawable/more_clear"
+        android:text="清除下载" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_size_.5"
+        android:background="@color/view_background_light" />
+
+    <TextView
+        android:id="@+id/fragment_more_tv_pull"
+        style="@style/more_item"
+        android:drawableLeft="@drawable/more_output"
+        android:text="导出Excel(.csv)" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_size_.5"
+        android:background="@color/view_background_light" />
+
+    <TextView
+        android:id="@+id/fragment_more_tv_version"
+        style="@style/more_item"
+        android:drawableLeft="@drawable/more_update"
+        android:text="版本更新(1.0.0)" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_size_.5"
+        android:background="@color/view_background_light" />
+
+    <TextView
+        android:id="@+id/fragment_more_tv_us"
+        style="@style/more_item"
+        android:drawableLeft="@drawable/more_us"
+        android:drawableRight="@drawable/btn_next"
+        android:text="关于我们" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/view_space_10"
+        android:background="@color/view_background_light" />
+
+    <TextView
+        android:id="@+id/fragment_more_tv_appwall"
+        style="@style/more_item"
+        android:drawableLeft="@drawable/more_appwall"
+        android:drawableRight="@drawable/btn_next"
+        android:text="精品推荐"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:background="@color/view_background_light" />
+</LinearLayout>

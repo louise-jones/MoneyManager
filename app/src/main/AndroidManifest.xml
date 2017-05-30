@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.minidroid.moneymanager">
+
+    <!-- qq登陆所需 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+
+    <!-- webview的网络访问权限 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- 自动更新需要的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/> <!-- 获取GSM（2g）、WCDMA（联通3g）等网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/> <!-- 获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/> <!-- 允许读取手机状态 6.0运行时权限 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/> <!-- 特殊权限 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+
+    <!-- 以下权限在6.0以后需要动态申请 -->
+    <!-- SD卡读写权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- 打电话、相机、读取联系人权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+
+    <!-- 保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <!-- 短信的权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.BROADCAST_SMS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+
+    <application
+        android:name=".ui.load.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- screenOrientation="portrait"表示当我们切换横竖屏的时候，屏幕的内容始终以竖屏显示，而不会根据屏幕的方向来显示内容 -->
+        <activity
+            android:name=".ui.load.LoadingActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.load.WelcomeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.input.InputActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.accountadd.AddAccountActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.accounttransfer.TransferAccountsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.accountselect.SelectAccountActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.detailaccount.AccountDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.record.RecordActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.classselect.SelectClassActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.invest.InvestActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.detailday.DayActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.detailmonth.MonthActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.datailyear.YearActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.about.AboutActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.register.RegisterActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.centerperson.PersonCenterActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.personalupdate.UpdatePersonInfoActivity"
+            android:screenOrientation="portrait"/>
+        <!-- qq登录所需 -->
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="tencent1106073785"/>
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="BDAPPID"
+            android:value="9564006"/>
+        <meta-data
+            android:name="BDAPPKEY"
+            android:value="rFtMWFnyrsBADkLlYsEepmiH1MsbRfc4"/>
+        <!-- 百度市场自动更新 -->
+        <activity
+            android:name="com.baidu.autoupdatesdk.ConfirmDialoigActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/bdp_update_dialog_style_fullscreen"/>
+        <receiver
+            android:name="com.baidu.autoupdatesdk.receiver.BDBroadcastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.baidu.autoupdatesdk.ACTION_NEW_UPDATE"/>
+                <action android:name="com.baidu.autoupdatesdk.ACTION_DOWNLOAD_COMPLETE"/>
+                <action android:name="com.baidu.autoupdatesdk.ACTION_NEW_AS"/>
+                <action android:name="com.baidu.autoupdatesdk.ACTION_AS_DOWNLOAD_COMPLETE"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

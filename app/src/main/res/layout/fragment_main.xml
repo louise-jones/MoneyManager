@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="4.0"
+        android:background="@color/title_yel"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:src="@drawable/icon_1" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/view_space_5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="您的记账第 "
+                android:textColor="@color/font_zs" />
+
+            <TextView
+                android:id="@+id/mainactivity_tv_totalday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_in_color"
+                android:textSize="@dimen/font_size_22" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 天"
+                android:textColor="@color/font_zs" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_"
+                android:padding="@dimen/view_space_10">
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/mainactivity_tv_totalin"
+                        style="@style/main_tv_22"
+                        android:textColor="@color/text_in_color" />
+
+                    <Space
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/view_space_5" />
+
+                    <TextView
+                        style="@style/main_tv_15"
+                        android:drawableLeft="@drawable/income_icon"
+                        android:text="收入总额" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/line_size_.5"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="@dimen/view_space_5"
+                    android:layout_marginTop="@dimen/view_space_5"
+                    android:alpha="0.9"
+                    android:background="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/mainactivity_tv_totalout"
+                        style="@style/main_tv_22"
+                        android:textColor="@color/text_out_color" />
+
+                    <Space
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/view_space_5" />
+
+                    <TextView
+                        style="@style/main_tv_15"
+                        android:drawableLeft="@drawable/payout_icon"
+                        android:text="支出总额" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_size_.5"
+                android:layout_marginLeft="@dimen/view_space_5"
+                android:layout_marginRight="@dimen/view_space_5"
+                android:alpha="0.6"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_"
+                android:padding="@dimen/view_space_10">
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/mainactivity_tv_total"
+                        style="@style/main_tv_22"
+                        android:textColor="@color/text_in_color" />
+
+                    <Space
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/view_space_5" />
+
+                    <TextView
+                        style="@style/main_tv_15"
+                        android:drawableLeft="@drawable/balance_icon"
+                        android:text="收支合计" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/line_size_.5"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="@dimen/view_space_5"
+                    android:layout_marginTop="@dimen/view_space_5"
+                    android:alpha="0.9"
+                    android:background="@color/white" />
+
+                <LinearLayout
+                    android:id="@+id/mainactivity_ll_remainder"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/mainactivity_tv_remainder"
+                        style="@style/main_tv_22"
+                        android:textColor="@color/text_in_color" />
+
+                    <Space
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/view_space_5" />
+
+                    <TextView
+                        style="@style/main_tv_15"
+                        android:drawablePadding="@dimen/view_space_5"
+                        android:text="余 额" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/mainactivity_tv_add"
+            style="@style/main_tv_16"
+            android:layout_weight="1.0"
+            android:text="添加收入/支出"/>
+
+        <View
+            android:layout_width="@dimen/line_size_.5"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="@dimen/view_space_5"
+            android:layout_marginTop="@dimen/view_space_5"
+            android:background="@color/view_background_light"/>
+
+        <TextView
+            android:id="@+id/mainactivity_tv_invest"
+            style="@style/main_tv_16"
+            android:layout_weight="1.0"
+            android:text="理财"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/view_space_10"
+        android:background="@color/view_background_light" />
+
+    <LinearLayout
+        android:id="@+id/main_ll_itemday"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:background="@drawable/item_state"
+        android:padding="@dimen/view_space_7">
+
+        <TextView
+            android:id="@+id/mainactivity_tv_day"
+            style="@style/mainImg" />
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/view_space_10"
+            android:paddingRight="@dimen/view_space_10">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0">
+
+                <TextView
+                    style="@style/main_tv_16_2"
+                    android:text="今天" />
+
+                <TextView
+                    android:id="@+id/mainactivity_tv_dayin"
+                    style="@style/text_in_out"
+                    android:textColor="@color/text_in_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0">
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0">
+
+                    <TextView
+                        style="@style/main_tv_16_2"
+                        android:text="合计：" />
+
+                    <TextView
+                        android:id="@+id/mainactivity_tv_daytotal"
+                        style="@style/text_in_out"
+                        android:gravity="center|left" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/mainactivity_tv_dayout"
+                    style="@style/text_in_out"
+                    android:textColor="@color/text_out_color" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/btn_next" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_size_.5"
+        android:background="@color/view_background_light" />
+
+    <LinearLayout
+        android:id="@+id/main_ll_itemmonth"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:background="@drawable/item_state"
+        android:padding="@dimen/view_space_7">
+
+        <TextView
+            android:id="@+id/mainactivity_tv_month"
+            style="@style/mainImg" />
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/view_space_10"
+            android:paddingRight="@dimen/view_space_10">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0">
+
+                <TextView
+                    style="@style/main_tv_16_2"
+                    android:text="本月" />
+
+                <TextView
+                    android:id="@+id/mainactivity_tv_monthin"
+                    style="@style/text_in_out"
+                    android:textColor="@color/text_in_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0">
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0">
+
+                    <TextView
+                        style="@style/main_tv_16_2"
+                        android:text="合计：" />
+
+                    <TextView
+                        android:id="@+id/mainactivity_tv_monthtotal"
+                        style="@style/text_in_out"
+                        android:gravity="center|left" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/mainactivity_tv_monthout"
+                    style="@style/text_in_out"
+                    android:textColor="@color/text_out_color" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/btn_next" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_size_.5"
+        android:background="@color/view_background_light" />
+
+    <LinearLayout
+        android:id="@+id/main_ll_itemyear"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:background="@drawable/item_state"
+        android:padding="@dimen/view_space_7">
+
+        <TextView
+            android:id="@+id/mainactivity_tv_year"
+            style="@style/mainImg"
+            android:textSize="@dimen/font_size_15" />
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.1"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/view_space_10"
+            android:paddingRight="@dimen/view_space_10">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0">
+
+                <TextView
+                    style="@style/main_tv_16_2"
+                    android:text="本年" />
+
+                <TextView
+                    android:id="@+id/mainactivity_tv_yearin"
+                    style="@style/text_in_out"
+                    android:textColor="@color/text_in_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0">
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0">
+
+                    <TextView
+                        style="@style/main_tv_16_2"
+                        android:text="合计：" />
+
+                    <TextView
+                        android:id="@+id/mainactivity_tv_yeartotal"
+                        style="@style/text_in_out"
+                        android:gravity="center|left" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/mainactivity_tv_yearout"
+                    style="@style/text_in_out"
+                    android:textColor="@color/text_out_color" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/btn_next" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,79 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.antfortune.freeline'
+android {
+    signingConfigs {
+        config {
+            keyAlias 'moneymanager'
+            keyPassword '123456'
+            storeFile file('E:/android_studioWorkpace/key_store_path/moneymanager.jks')
+            storePassword '123456'
+        }
+    }
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    /**兼容Android6.0系统所需，因为HttpClient在android6.0被废弃了，如果这句话报错，可在dependencies标签下使用compile 'cn.bmob.android:http-legacy:1.0'**/
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId "com.minidroid.moneymanager"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.config
+        }
+    }
+    dexOptions {
+        incremental true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    //解决rxjava冲突
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //百度市场自动更新组件
+    compile files('libs/BDAutoUpdateSDK_V1.2.0.2.jar')
+    compile files('libs/galaxy_lite.jar')
+    compile files('libs/patchupdate.jar')
+    //饼状图
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.0'
+    //bmob-sdk：Bmob的android sdk包，包含了Bmob的数据存储、文件等服务，以下是最新的bmob-sdk:
+    compile 'cn.bmob.android:bmob-sdk:3.5.5'
+    //QQ第三方登录
+    compile files('libs/open_sdk_r5788.jar')
+    compile files('libs/mta-sdk-1.6.2.jar')
+
+    //选择图片控件
+    compile 'com.github.LuckSiege.PictureSelector:picture_library:v1.4.9'
+    //选择日期控件
+    compile 'com.github.codbking:PickTime:v1.0.1'
+    //BiuEditText控件
+    compile 'com.xujinyang.BiuEditText:library:1.4.1'
+    //picasso图片加载框架
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'cn.bmob.android:http-legacy:1.0'
+    compile 'com.android.support:appcompat-v7:25.0.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+}

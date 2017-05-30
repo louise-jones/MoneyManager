@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_activity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/view_size_75"
+        android:background="@color/background_title">
+
+        <ImageButton
+            android:layout_marginTop="@dimen/view_space_30"
+            android:id="@+id/dayactivity_ib_return"
+            style="@style/detail_rb"
+            android:src="@drawable/icon_back_normal" />
+
+        <Space
+            android:id="@+id/activity_detail_space"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.0"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:layout_marginTop="@dimen/view_space_30"
+            android:id="@+id/dayactivity_ib_delete"
+            style="@style/detail_rb"
+            android:src="@drawable/suite_info_delete_btn_normal" />
+
+        <ImageButton
+            android:layout_marginTop="@dimen/view_space_30"
+            android:id="@+id/dayactivity_ib_order"
+            style="@style/detail_rb"
+            android:src="@drawable/icon_bottom_normal" />
+
+        <ImageButton
+            android:layout_marginTop="@dimen/view_space_30"
+            android:id="@+id/dayactivity_ib_more"
+            style="@style/detail_rb"
+            android:src="@drawable/icon_back_normalr" />
+
+        <ImageButton
+            android:layout_marginTop="@dimen/view_space_30"
+            android:id="@+id/dayactivity_ib_list"
+            style="@style/detail_rb"
+            android:src="@drawable/icon_list_normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0">
+
+        <ListView
+            android:id="@+id/detail_lv"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="3.0"
+            android:background="@color/view_background_light"
+            android:divider="@null"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/detail_vp"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="10.0"
+            android:overScrollMode="never" />
+    </LinearLayout>
+</LinearLayout>

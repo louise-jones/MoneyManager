@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:paddingTop="@dimen/view_space_30"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/view_size_75"
+        android:background="@color/title_yel"
+        android:gravity="center"
+        android:text="个人账户"
+        android:textColor="@color/font_zs"
+        android:textSize="@dimen/font_size_16" />
+
+    <LinearLayout
+        android:id="@+id/fragment_count_ll_total"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/view_size_50"
+        android:background="@color/title_yel"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/view_space_15"
+        android:paddingRight="@dimen/view_space_5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总额"
+            android:textColor="@color/font_zs"
+            android:textSize="@dimen/font_size_20" />
+
+        <Space
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+
+        <TextView
+            android:id="@+id/fragment_count_tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/view_space_10"
+            android:textColor="@color/font_zs"
+            android:textSize="@dimen/font_size_22" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_next" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/count_tv_add"
+            style="@style/main_tv_16"
+            android:layout_weight="1.0"
+            android:text="添加账户" />
+
+        <View
+            android:layout_width="@dimen/line_size_.5"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="@dimen/view_space_5"
+            android:layout_marginTop="@dimen/view_space_5"
+            android:background="@color/view_background_light" />
+
+        <TextView
+            android:id="@+id/count_tv_change"
+            style="@style/main_tv_16"
+            android:layout_weight="1.0"
+            android:text="转账/存取款" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/view_space_10"
+        android:background="@color/view_background_light" />
+
+    <com.minidroid.moneymanager.view.swipemenulistview.SwipeMenuListView
+        android:id="@+id/count_lv_count"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:background="@color/view_background_light"
+        android:divider="@color/view_background_light"
+        android:dividerHeight="@dimen/line_size_.5"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:id="@+id/fragment_count_lv_null"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:background="@color/view_background_light"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/view_size_100"
+            android:layout_height="@dimen/view_size_100"
+            android:src="@drawable/icon" />
+
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/view_space_10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您还没有记录" />
+    </LinearLayout>
+</LinearLayout>

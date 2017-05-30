@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_activity"
+    android:orientation="vertical"
+    tools:context="com.minidroid.moneymanager.ui.about.AboutActivity">
+
+    <include layout="@layout/title_layout" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/view_space_10"
+        android:background="@color/view_background_light" />
+
+
+    <TextView
+        android:id="@+id/aboutactivity_about_tv_contact"
+        style="@style/more_item"
+        android:drawableLeft="@drawable/aboutus_1"
+        android:drawableRight="@drawable/btn_next"
+        android:text="QQ: 460821714" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_size_.5"
+        android:background="@color/view_background_light" />
+
+    <TextView
+        android:id="@+id/aboutactivity_about_tv_recommend"
+        style="@style/more_item"
+        android:drawableLeft="@drawable/aboutus_2"
+        android:drawableRight="@drawable/btn_next"
+        android:text="理财推荐" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_size_.5"
+        android:background="@color/view_background_light" />
+
+    <TextView
+        android:id="@+id/aboutactivity_about_tv_service"
+        style="@style/more_item"
+        android:drawableLeft="@drawable/aboutus_3"
+        android:drawableRight="@drawable/btn_next"
+        android:text=" 联系客服:10086" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_size_.5"
+        android:background="@color/view_background_light" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:background="@color/view_background_light" />
+</LinearLayout>

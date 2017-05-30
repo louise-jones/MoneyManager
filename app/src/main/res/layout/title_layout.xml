@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/view_size_75"
+    android:background="@color/background_title">
+
+    <ImageButton
+        android:id="@+id/baseactivity_ib_return"
+        android:layout_marginTop="@dimen/view_space_30"
+        android:layout_width="@dimen/view_size_50"
+        android:layout_height="@dimen/view_size_50"
+        android:background="@drawable/item_state"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:src="@drawable/icon_back_normal"
+        android:textColor="@color/background_activity" />
+
+    <TextView
+        android:text="添加账号"
+        android:id="@+id/baseactivity_tv_title"
+        android:layout_marginTop="@dimen/view_space_42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/background_activity"
+        android:textSize="@dimen/font_size_16" />
+
+    <ImageButton
+        android:layout_marginTop="@dimen/view_space_30"
+        android:id="@+id/baseactivity_ib_ok"
+        android:layout_width="@dimen/view_size_50"
+        android:layout_height="@dimen/view_size_50"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/item_state"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:src="@drawable/icon_tick_normal"
+        android:textColor="@color/background_activity" />
+
+    <ImageButton
+        android:layout_marginTop="@dimen/view_space_30"
+        android:id="@+id/baseactivity_ib_order"
+        android:layout_width="@dimen/view_size_50"
+        android:layout_height="@dimen/view_size_50"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/item_state"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:src="@drawable/icon_bottom_normal"
+        android:textColor="@color/background_activity"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_activity"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/mainactivity_fl_space"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_size_1"
+        android:background="@color/view_background_light" />
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/view_size_50"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/main_rb_main"
+            style="@style/rbStyle"
+            android:checked="true"
+            android:drawableTop="@drawable/rb_main"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/main_rb_count"
+            style="@style/rbStyle"
+            android:drawableTop="@drawable/rb_count"
+            android:text="账户" />
+
+        <RadioButton
+            android:id="@+id/main_rb_more"
+            style="@style/rbStyle"
+            android:drawableTop="@drawable/rb_more"
+            android:text="更多" />
+    </RadioGroup>
+</LinearLayout>

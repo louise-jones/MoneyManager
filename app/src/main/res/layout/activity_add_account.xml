@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_activity"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_layout" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/view_space_10"
+        android:background="@color/view_background_light" />
+
+    <EditText
+        android:id="@+id/accountadd_et_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/view_space_10"
+        android:background="@drawable/edit_style"
+        android:hint="请输入账户名称"
+        android:maxLength="10"
+        android:padding="@dimen/view_space_10"
+        android:textSize="@dimen/font_size_20" />
+
+    <LinearLayout
+        android:id="@+id/accountadd_ll_count"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_state"
+        android:onClick="onClick"
+        android:padding="@dimen/view_space_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/view_space_10"
+            android:text="金额"
+            android:textSize="@dimen/font_size_20" />
+
+        <Space
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+
+        <TextView
+            android:id="@+id/accountadd_tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/view_space_10"
+            android:text="00.00"
+            android:textSize="@dimen/font_size_20" />
+    </LinearLayout>
+</LinearLayout>
