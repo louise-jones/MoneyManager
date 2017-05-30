@@ -1,2 +1,2 @@
-MoneyManager
+#MoneyManager#
 这是一个家庭理财项目，记录资金出入曲线，合理规划消费和投资，提高理财水平。
